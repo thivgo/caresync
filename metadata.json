@@ -1,0 +1,5 @@
+{
+  "name": "CareSync Family",
+  "description": "A mobile-first care coordination app for families to manage daily tasks for elderly relatives. Features task assignment, shared calendar, and real-time status updates.",
+  "requestFramePermissions": []
+}
