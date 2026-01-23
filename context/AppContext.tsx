@@ -88,6 +88,18 @@ export const AppProvider: React.FC<PropsWithChildren<{}>> = ({ children }) => {
       }
   };
 
+  // --- REALTIME LISTENER ---
+  useEffect(() => {
+    // This connects to the simulated realtime channel (or Supabase in production)
+    const unsubscribe = db.subscribeToChanges(() => {
+        if (currentUser) {
+            console.log('Realtime update received. Refreshing data...');
+            loadData();
+        }
+    });
+    return unsubscribe;
+  }, [currentUser]); // Re-subscribe if user changes, though mainly we just need to be logged in
+
   // Initial Auth Check
   useEffect(() => {
     const checkAuth = async () => {

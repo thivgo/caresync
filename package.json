@@ -1,5 +1,5 @@
 {
-  "name": "uffizi-redesign",
+  "name": "caresync-family",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,13 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "nuxt": "^4.3.0",
-    "tailwindcss": "^4.1.18",
-    "vue": "^3.5.27"
+    "react-dom": "^19.2.3",
+    "react-router-dom": "^7.12.0",
+    "react": "^19.2.3",
+    "lucide-react": "^0.562.0",
+    "date-fns": "^4.1.0",
+    "@supabase/supabase-js": "2.39.3"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
-    
+    "@vitejs/plugin-react": "^5.0.0",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
   }

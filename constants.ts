@@ -1,6 +1,12 @@
 import { ElderlyProfile, Task, TaskPriority, TaskStatus, TaskType, User } from './types';
 import { addHours, startOfDay } from 'date-fns';
 
+// --- CONFIGURAÇÃO DA NUVEM (SUPABASE) ---
+// Para funcionar entre dispositivos diferentes, crie um projeto no supabase.com
+// e cole suas chaves abaixo. Se deixar vazio, o app funciona apenas localmente.
+export const SUPABASE_URL = ''; // Ex: https://xyz.supabase.co
+export const SUPABASE_ANON_KEY = ''; // Ex: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+
 export const MOCK_USERS: User[] = [
   {
     id: 'admin_user',
